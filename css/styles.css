@@ -25,6 +25,10 @@
   padding: 2%;
 }
 
+.survey-col h4 {
+  padding-top: 2%
+}
+
 .show-results-design {
   display: none;
 }
