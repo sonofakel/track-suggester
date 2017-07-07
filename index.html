@@ -1,141 +1,140 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Epicodus Track Suggester</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus Track Suggester</h1>
+        <p>Find out which programming language best suits you!</p>
+      </div>
+      <div class="col-md-6 survey-col">
+        <form id="person-info">
+          <h3>Please answer the questions below:</h3>
+          <div class="form-group">
+            <label for="first-name"><h4>What's your first name?</h4></label>
+            <input id="first-name" class="form-control" type="text">
+          </div>
 
-<head>
-  <meta charset="utf-8">
-  <title>Epicodus Track Suggester</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</head>
+          <h4>When looking at a website are you more interested in what it looks like or the problem it solves for the user?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="design" value="likes-design" checked>
+              What is looks like
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="design" value="likes-backend">
+              Problem it solves for user
+            </label>
+          </div>
 
-<body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Epicodus Track Suggester</h1>
-      <p>Find out which programming language best suits you!</p>
-    </div>
-    <div class="col-md-6 survey-col">
-      <form id="person-info">
-        <h3>Please answer the questions below:</h3>
-        <div class="form-group">
-          <label for="first-name"><h4>What's your first name?</h4></label>
-          <input id="first-name" class="form-control" type="text">
-        </div>
-        <h4>When looking at a website are you more interested in what it looks like or the problem it solves for the user?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="design" value="likes-design" checked>
-            What is looks like
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="design" value="likes-backend">
-            Problem it solves for user
-          </label>
-        </div>
+          <h4>What size company would you like to work for?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="bus-type" value="start-up" checked>
+              Startups
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="bus-type" value="med-size">
+              Medium-size business
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="bus-type" value="corp">
+              Corporation
+            </label>
+          </div>
 
-        <h4>What size company would you like to work for?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="bus-type" value="start-up" checked>
-            Startups
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="bus-type" value="med-size">
-            Medium-size business
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="bus-type" value="corp">
-            Corporation
-          </label>
-        </div>
+          <h4>What do you want to build?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="website-type" value="small-site" checked>
+              Small sites for brands & businesses
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="website-type" value="web-apps">
+              Small web applications & mobile apps
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="website-type" value="enterprise">
+              Enterprise-class software
+            </label>
+          </div>
 
-        <h4>What do you want to build?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="website-type" value="small-site" checked>
-            Small sites for brands & businesses
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="website-type" value="web-apps">
-            Small web applications & mobile apps
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="website-type" value="enterprise">
-            Enterprise-class software
-          </label>
-        </div>
+          <h4>Why do you want to be a programmer?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="why-program" value="make-money" checked>
+              Make money
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="why-program" value="get-job">
+              Get a job
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="why-program" value="interested">
+              I'm interested in how computers work
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="why-program" value="dont-care">
+              I don't care. Just pick a language for me.
+            </label>
+          </div>
 
-        <h4>Why do you want to be a programmer?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="why-program" value="make-money" checked>
-            Make money
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="why-program" value="get-job">
-            Get a job
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="why-program" value="interested">
-            I'm interested in how computers work
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="why-program" value="dont-care">
-            I don't care. Just pick a language for me.
-          </label>
-        </div>
+          <h4>What's your favorite toy?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fav-toy" value="lego" checked>
+              Lego
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fav-toy" value="play-doh">
+              Play-Doh
+            </label>
+          </div>
 
-        <h4>What's your favorite toy?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fav-toy" value="lego" checked>
-            Lego
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fav-toy" value="play-doh">
-            Play-Doh
-          </label>
-        </div>
+          <button id="match" type="submit" class="btn">Match</button>
 
-        <button id="match" type="submit" class="btn">Match</button>
-      </form>
-    </div>
-    <div class="col-md-1">
-    </div>
-    <div class="col-md-5 result-col">
-      <h3 class="hide-results"><img src="img/shown-img.png" alt="shown-img"></h3>
-      <a href="https://www.epicodus.com/ruby/" target="_blank"><img src="img/ruby-rails.png" id="ruby-img"></a>
-      <a href="https://www.epicodus.com/design/" target="_blank"><img src="img/design.png" id="design-img"></a>
-      <a href="https://www.epicodus.com/c-sharp/" target="_blank"><img src="img/c-sharp.png" id="c-img"></a>
-      <div class="result-text">
-        <h4 class="show-results-design"><span class="first-name"></span>, you ought to study design, so you can learn how to make cool looking websites!</h4>
-        <h4 class="show-results-ruby"><span class="first-name"></span>, you ought to study Ruby, so you can work for a startup and build interactive web applications!</h4>
-        <h4 class="show-results-c-sharp"><span class="first-name"></span>, you ought to study C#, so you can build create client applications, database applications, distributed components, and much more!</h4>
+        </form>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-5 result-col">
+        <h3 class="hide-results"><img src="img/shown-img.png" alt="shown-img"></h3>
+        <a href="https://www.epicodus.com/ruby/" target="_blank"><img src="img/ruby-rails.png" id="ruby-img"></a>
+        <a href="https://www.epicodus.com/design/" target="_blank"><img src="img/design.png" id="design-img"></a>
+        <a href="https://www.epicodus.com/c-sharp/" target="_blank"><img src="img/c-sharp.png" id="c-img"></a>
+        <div class="result-text">
+          <h4 class="show-results-design"><span class="first-name"></span>, you ought to study design, so you can learn how to make cool looking websites!</h4>
+          <h4 class="show-results-ruby"><span class="first-name"></span>, you ought to study Ruby, so you can work for a startup and build interactive web applications!</h4>
+          <h4 class="show-results-c-sharp"><span class="first-name"></span>, you ought to study C#, so you can create client applications, database applications, distributed components, and much more!</h4>
+        </div>
+      </div>
+      <div class="col-md-1">
       </div>
     </div>
-    <div class="col-md-1">
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
