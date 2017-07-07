@@ -9,13 +9,13 @@ $(function(){
 
 
 debugger;
-    if (design === "likes-design" && favToy === "play-doh") {
+    if (design === "likes-design") {
       $("#design-img").show();
       $(".show-results").show();
       $(".hide-results").hide();
       $("#ruby-img").hide();
       $("#c-img").hide();
-    } else if (design === "likes-backend" && busType === "start-up" ||  websiteType === "web-apps") {
+    } else if (design === "likes-backend" && busType === "start-up" || busType === "med-size" ||  websiteType === "web-apps") {
       $("#ruby-img").show();
       $(".show-results").show();
       $(".hide-results").hide();
@@ -28,9 +28,9 @@ debugger;
       $("#ruby-img").hide();
       $("#design-img").hide();
     } else {
-      $("#c-img").show();
-      $("#design-img").hide();
+      $("#design-img").show();
       $("#ruby-img").hide();
+      $("#c-img").hide();
     }
   });
 });
