@@ -28,9 +28,9 @@ debugger;
       $("#ruby-img").hide();
       $("#design-img").hide();
     } else {
-      $("#design-img").show();
+      $("#c-img").show();
+      $("#design-img").hide();
       $("#ruby-img").hide();
-      $("#c-img").hide();
     }
   });
 });
