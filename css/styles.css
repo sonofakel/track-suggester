@@ -1,9 +1,16 @@
 .container {
   margin-bottom: 7%;
+
 }
 
 .jumbotron {
   text-align: center;
+  background-image: url("../img/track-bkg.png");
+  color: #186290;
+}
+
+.jumbotron p{
+  color: white;
 }
 
 .show-results-design {
