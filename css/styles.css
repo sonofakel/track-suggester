@@ -1,6 +1,7 @@
 .container {
   margin-bottom: 7%;
-
+  background-image: url("../img/bkg.png");
+  padding-bottom: 7%;
 }
 
 .jumbotron {
@@ -11,6 +12,17 @@
 
 .jumbotron p{
   color: white;
+}
+
+.result-col {
+  margin-left: 3%;
+  margin-top: 6%;
+}
+
+.survey-col {
+  margin-left: 3%;
+  background-color: rgba(238, 134, 84, 0.19);
+  padding: 2%;
 }
 
 .show-results-design {
