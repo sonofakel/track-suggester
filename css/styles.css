@@ -6,8 +6,21 @@
   text-align: center;
 }
 
-.show-results {
+.show-results-design {
   display: none;
+}
+
+.show-results-ruby {
+  display: none;
+}
+
+.show-results-c-sharp {
+  display: none;
+}
+
+.result-text {
+  text-align: center;
+  margin: 0 5%;
 }
 
 #ruby-img {
