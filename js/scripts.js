@@ -13,7 +13,7 @@ $(function(){
     if (design === "likes-design") {
       $("#design-img").show();
       $(".show-results-design").show();
-      $(".show-results-c-sharp").hide();
+      $(".show-results-c-sharp").hide();  
       $(".show-results-ruby").hide();
       $(".hide-results").hide();
       $("#ruby-img").hide();
