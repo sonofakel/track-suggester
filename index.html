@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Track Suggester</title>
+  <title>Epicodus Track Suggester</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Track Suggester</h1>
+      <h1>Epicodus Track Suggester</h1>
       <p>Find out which programming language best suits you!</p>
     </div>
     <div class="col-md-1">
@@ -33,6 +33,7 @@
             <input type="radio" name="design-question" value="function">
             Problem it solves for user
         </div>
+
         <h4>What size company would you like to work for?</h4>
         <div class="radio">
           <label>
@@ -52,6 +53,7 @@
             Large corporation
           </label>
         </div>
+
         <h4>What do you want to build?</h4>
         <div class="radio">
           <label>
@@ -71,6 +73,47 @@
             Enterprise-class software
           </label>
         </div>
+
+        <h4>Why do you want to be a programmer?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why-program" value="make-money" checked>
+            Make money
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why-program" value="get-job">
+            Get a job
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why-program" value="interested">
+            I'm interested in how computers work
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why-program" value="dont-care">
+            I don't care. Just pick a language for me.
+          </label>
+        </div>
+
+        <h4>What's your favorite toy?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fav-toy" value="lego" checked>
+            Lego
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fav-toy" value="lego">
+            Play-Doh
+          </label>
+        </div>
+
         <button id="match" type="submit" class="btn">Match</button>
       </form>
     </div>
