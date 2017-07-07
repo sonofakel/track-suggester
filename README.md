@@ -6,7 +6,7 @@
 
 ## Description
 
-_This web page uses a series of questions to help an aspiring Epicodus student choose a programming language that will fit their needs. The questions are qualitative and  based from material provided by Epicodus's website. Answers from these questions are placed into logical expressions use branching to lead the user towards the language that is most suitable._
+_This web page uses a series of questions to help an aspiring Epicodus student choose a programming language that will fit their needs. The questions are qualitative and  based from material provided by Epicodus's website. Answers from these questions are placed into logical expressions use branching to lead the user towards the language that is most suitable.[Click here to view GitHub Page](https://sonofakel.github.io/track-suggester/)._
 
 ## Setup/Installation Requirements
 
