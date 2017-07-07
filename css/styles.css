@@ -1,3 +1,18 @@
 .jumbotron {
   text-align: center;
 }
+
+.show-results {
+  display: none;
+}
+
+#ruby-img {
+    display: none;
+}
+
+#design-img {
+  display: none;
+}
+#c-img {
+  display: none;
+}
